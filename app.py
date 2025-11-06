@@ -1,3 +1,5 @@
+# app.py — tiny pure function for CI tests
+
 def save_note(text: str) -> str:
     """
     Return a trimmed note (max 200 chars).
