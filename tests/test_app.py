@@ -1,8 +1,10 @@
 # tests/test_app.py
-# Ensure repo root (where app.py lives) is on sys.path
+# ruff: noqa: E402  ← allow path-adjust before imports
+
 import sys
 from pathlib import Path
 
+# Ensure repo root (where app.py lives) is on sys.path
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
